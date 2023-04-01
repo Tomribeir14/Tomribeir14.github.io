@@ -1,0 +1,46 @@
+body{
+    background-color:aqua;
+}
+
+.menu{
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+.itens{
+    display: flex;
+}
+
+.itens> div{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itens div img{
+    height: 80%;
+    width: 100%;
+}
+
+.itens div div{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(39, 39, 38);
+    color:white;
+}
+
+#preco{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 252, 252);
+    border: 2px solid black;
+    padding: 3px;
+    position: absolute;
+    border-radius: 15px;
+    margin-left: 160px;
+    margin-top: -10px;
+}
