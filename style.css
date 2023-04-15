@@ -1,46 +1,84 @@
 body{
-    background-color:aqua;
+    background-image: url('https://images.tcdn.com.br/img/img_prod/472762/papel_de_parede_autoadesivo_videogame_1654849427_1_78066d780f73885c74d8cfa77a667f05.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+a{
+    text-decoration: none;
 }
 
 .menu{
-    background-color:rgb(0, 0, 0);
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 40px;
     color:rgb(255, 255, 255);
+    padding: 5px;
+    margin: 30px;
+    text-align: center;
+    font-family: Game Over;
 }
 
 .itens{
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.itens> div{
+.itens div a{
+    width: 150px;
+    border: 2px solid white;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itens div:hover{
+    cursor: pointer;
+}
+
+.itens a > div{
     border: 2px solid black;
-    height: 200px;
-    width: 200px;
+    width: 100%;
+    height: 100%;
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.itens div img{
-    height: 80%;
+.itens img{
+    height: 150px;
     width: 100%;
 }
 
-.itens div div{
-    height: 20%;
+.itens div label{
+    height: 40px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:rgb(39, 39, 38);
     color:white;
+    font-weight: none;
+}
+
+.itens div label:hover{
+    cursor: pointer;
 }
 
 #preco{
-    background-color: rgb(0, 0, 0);
+    height: 15px;
+    width: 60px;
+    text-align: center;
+    background-color: rgb(207, 34, 34);
     color: rgb(255, 252, 252);
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 3px;
     position: absolute;
     border-radius: 15px;
-    margin-left: 160px;
+    margin-left: -80px;
     margin-top: -10px;
 }
